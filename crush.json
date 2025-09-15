@@ -1,0 +1,53 @@
+{
+    "$schema": "https://charm.land/crush.json",
+    "lsp": {
+        "pyright": {
+            "command": "pyright-langserver",
+            "args": ["--stdio"],
+            "extensions": [".py", ".pyi"]
+        },
+        "ruff": {
+            "command": "ruff",
+            "args": ["server"],
+            "extensions": [".py", ".pyi"]
+        },
+        "clangd": {
+            "command": "clangd",
+            "extensions": ["c", "cpp", "objc", "objcpp", "cuda"]
+        },
+        "go": {
+            "command": "gopls",
+            "extensions": ["go", "gomod", "gowork", "gotmpl"]
+        }
+    },
+    "providers": {
+        "lmstudio": {
+            "name": "LM Studio",
+            "base_url": "http://localhost:1234/v1/",
+            "type": "openai",
+            "models": [
+                {
+                    "name": "Qwen3:1.7B",
+                    "id": "qwen/qwen3-1.7b",
+                    "can_reason": true,
+                    "context_window": 256000,
+                    "default_max_tokens": 20000
+                },
+                {
+                    "name": "Qwen3:4B",
+                    "id": "qwen/qwen3-4b",
+                    "can_reason": true,
+                    "context_window": 256000,
+                    "default_max_tokens": 20000
+                },
+                {
+                    "name": "phi4-mini",
+                    "id": "microsoft/phi-4-mini-reasoning",
+                    "can_reason": true,
+                    "context_window": 256000,
+                    "default_max_tokens": 20000
+                }
+            ]
+        }
+    }
+}
