@@ -18,6 +18,11 @@
         "go": {
             "command": "gopls",
             "extensions": ["go", "gomod", "gowork", "gotmpl"]
+        },
+        "ts": {
+            "command": "typescript-language-server",
+            "args": ["--stdio"],
+            "extensions": ["js", "ts", "jsx", "tsx"]
         }
     },
     "providers": {
