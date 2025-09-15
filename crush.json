@@ -23,7 +23,7 @@
     "providers": {
         "lmstudio": {
             "name": "LM Studio",
-            "base_url": "http://$(ip route | grep default | awk '{print $3}'):1234/v1",
+            "base_url": "http://$([[ -n $WSL_DISTRO_NAME ]] && ip route | grep default | awk '{print $3}'; [[ -n $WSL_DISTRO_NAME ]] || echo 'localhost'):1234/v1",
             "type": "openai",
             "models": [
                 {
