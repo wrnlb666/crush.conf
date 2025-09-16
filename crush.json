@@ -6,26 +6,54 @@
     "lsp": {
         "pyright": {
             "command": "pyright-langserver",
-            "args": ["--stdio"],
-            "extensions": [".py", ".pyi"]
+            "args": [
+                "--stdio"
+            ],
+            "extensions": [
+                ".py",
+                ".pyi"
+            ]
         },
         "ruff": {
             "command": "ruff",
-            "args": ["server"],
-            "extensions": [".py", ".pyi"]
+            "args": [
+                "server"
+            ],
+            "extensions": [
+                ".py",
+                ".pyi"
+            ]
         },
         "clangd": {
             "command": "clangd",
-            "extensions": ["c", "cpp", "objc", "objcpp", "cuda"]
+            "extensions": [
+                "c",
+                "cpp",
+                "objc",
+                "objcpp",
+                "cuda"
+            ]
         },
         "go": {
             "command": "gopls",
-            "extensions": ["go", "gomod", "gowork", "gotmpl"]
+            "extensions": [
+                "go",
+                "gomod",
+                "gowork",
+                "gotmpl"
+            ]
         },
         "ts": {
             "command": "typescript-language-server",
-            "args": ["--stdio"],
-            "extensions": ["js", "ts", "jsx", "tsx"]
+            "args": [
+                "--stdio"
+            ],
+            "extensions": [
+                "js",
+                "ts",
+                "jsx",
+                "tsx"
+            ]
         }
     },
     "providers": {
@@ -37,29 +65,45 @@
                 {
                     "name": "Qwen3:1.7B",
                     "id": "qwen/qwen3-1.7b",
-                    "can_reason": true,
-                    "context_window": 256000,
-                    "default_max_tokens": 20000
+                    "can_reason": false,
+                    "context_window": 32768
                 },
                 {
                     "name": "Qwen3:4B",
                     "id": "qwen/qwen3-4b",
-                    "can_reason": true,
-                    "context_window": 256000,
-                    "default_max_tokens": 20000
+                    "can_reason": false,
+                    "context_window": 32768
                 },
                 {
                     "name": "phi4-mini",
                     "id": "microsoft/phi-4-mini-reasoning",
-                    "can_reason": true,
-                    "context_window": 256000,
-                    "default_max_tokens": 20000
+                    "can_reason": false,
+                    "context_window": 131072
+                },
+                {
+                    "name": "Qwen3:8B",
+                    "id": "qwen/qwen3-8b",
+                    "can_reason": false,
+                    "context_window": 32768
+                },
+                {
+                    "name": "Gemma3:12B",
+                    "id": "google/gemma-3-12b",
+                    "can_reason": false,
+                    "supports_attachments": true,
+                    "context_window": 131072
                 },
                 {
                     "name": "gpt-oss-20b",
                     "id": "openai/gpt-oss-20b",
-                    "can_reason": true,
-                    "context_window": 256000,
+                    "can_reason": false,
+                    "context_window": 134144
+                },
+                {
+                    "name": "Qwen3:30B",
+                    "id": "qwen/qwen3-coder-30b",
+                    "can_reason": false,
+                    "context_window": 262144,
                     "default_max_tokens": 20000
                 }
             ]
