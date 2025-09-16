@@ -66,38 +66,44 @@
                     "name": "Qwen3:1.7B",
                     "id": "qwen/qwen3-1.7b",
                     "can_reason": false,
-                    "context_window": 32768
+                    "context_window": 32768,
+                    "default_max_tokens": 20000
                 },
                 {
                     "name": "Qwen3:4B",
                     "id": "qwen/qwen3-4b",
                     "can_reason": false,
-                    "context_window": 32768
+                    "context_window": 32768,
+                    "default_max_tokens": 20000
                 },
                 {
                     "name": "phi4-mini",
                     "id": "microsoft/phi-4-mini-reasoning",
                     "can_reason": false,
-                    "context_window": 131072
+                    "context_window": 131072,
+                    "default_max_tokens": 20000
                 },
                 {
                     "name": "Qwen3:8B",
                     "id": "qwen/qwen3-8b",
                     "can_reason": false,
-                    "context_window": 32768
+                    "context_window": 32768,
+                    "default_max_tokens": 20000
                 },
                 {
                     "name": "Gemma3:12B",
                     "id": "google/gemma-3-12b",
                     "can_reason": false,
                     "supports_attachments": true,
-                    "context_window": 131072
+                    "context_window": 131072,
+                    "default_max_tokens": 20000
                 },
                 {
                     "name": "gpt-oss-20b",
                     "id": "openai/gpt-oss-20b",
                     "can_reason": false,
-                    "context_window": 134144
+                    "context_window": 134144,
+                    "default_max_tokens": 20000
                 },
                 {
                     "name": "Qwen3:30B",
