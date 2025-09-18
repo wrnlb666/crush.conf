@@ -3,17 +3,8 @@
     "options": {
         "disable_provider_auto_update": true
     },
+    "mcp": {},
     "lsp": {
-        "pyright": {
-            "command": "pyright-langserver",
-            "args": [
-                "--stdio"
-            ],
-            "extensions": [
-                ".py",
-                ".pyi"
-            ]
-        },
         "ruff": {
             "command": "ruff",
             "args": [
